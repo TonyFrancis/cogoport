@@ -1,0 +1,46 @@
+{
+  "coverage": "25%",
+  "expectCount": 12,
+  "actualCount": 3,
+  "files": {
+    "src/App.js": {
+      "expectCount": 2,
+      "actualCount": 0,
+      "undocumentLines": [
+        23,
+        24
+      ]
+    },
+    "src/Todo.jsx": {
+      "expectCount": 6,
+      "actualCount": 2,
+      "undocumentLines": [
+        12,
+        15,
+        48,
+        52
+      ]
+    },
+    "src/actions/todo.jsx": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        1
+      ]
+    },
+    "src/reducers/index.jsx": {
+      "expectCount": 1,
+      "actualCount": 0,
+      "undocumentLines": [
+        4
+      ]
+    },
+    "src/reducers/todo.jsx": {
+      "expectCount": 2,
+      "actualCount": 1,
+      "undocumentLines": [
+        3
+      ]
+    }
+  }
+}

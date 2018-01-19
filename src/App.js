@@ -1,8 +1,9 @@
 import React from 'react';
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import reducer from './reducers'
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import reducer from './reducers';
 import Todo from './Todo';
+
 // class App extends Component {
 //   render() {
 //     return (
@@ -19,7 +20,7 @@ import Todo from './Todo';
 //   }
 // }
 
-let store = createStore(reducer)
+const store = createStore(reducer);
 const App = () => (
   <Provider store={store}>
     <Todo />

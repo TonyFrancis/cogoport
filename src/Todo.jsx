@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { TODO_ACTION } from './actions/index';
 
+/**
+ *  Todo app main Component
+ *  connect to redux
+ *  contain 2 function add and delete todo list
+ * @extends Component
+ */
 class Todo extends Component {
-
-  static propTypes = {
-
-  };
-
   constructor(props) {
     super(props);
 
@@ -19,15 +19,15 @@ class Todo extends Component {
 
   render() {
     const todoes = this.props.todo.map((elem, i) => {
-            return(
-              <div key={i}>
-                {elem}
-                <button onClick={() => this.props.onDelete(elem)}>
-                  Delete
-                </button>
-              </div>
-            )
-          });
+        return(
+          <div key={i}>
+            {elem}
+            <button onClick={() => this.props.onDelete(elem)}>
+              Delete
+            </button>
+          </div>
+        )
+      });
     return (
       <div>Todo
         {todoes}
@@ -46,7 +46,7 @@ class Todo extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  todo: state.todoApp
+  todo: state.todoApp,
 });
 
 const mapDispatchToProps = (dispatch) => ({
